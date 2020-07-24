@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="vievport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <title>Eryk Taszarek Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <section class="banner" id="sec">
+            <header>
+                <a href="#" class="logo">Portfolio</a>
+                <div id="toogle" onclick="toogle()"></div>
+            </header>
+            <div class="content">
+                <h2>Witaj, <span>jestem Eryk</span></h2>
+                <p>Mam 21 lat i coś tam Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tellus diam, imperdiet aliquam magna quis, consequat porta erat. Nulla tristique lorem nunc, in blandit urna tempus sed. Etiam rutrum magna id diam molestie suscipit. Cras eu iaculis nisi. Donec eget ullamcorper diam. Curabitur sollicitudin rutrum erat, ut lacinia est lobortis in.</p>
+                <a href="#">Zobacz więcej</a>
+            </div>
+        </section>
+        <div id="navigation">
+            <ul>
+                <li><a href="#">O mnie</a></li>
+                <li><a href="#">Co robię</a></li>
+                <li><a href="#">projekty</a></li>
+                <li><a href="#">kontakt</a></li>
+            </ul>
+        </div>
+        <script type="text/javascript">
+        function toogle(){
+            var sec = document.getElementById("sec");
+            sec.classList.toggle("active");
+            var nav = document.getElementById("navigation");
+            nav.classList.toggle("active");
+        }
+        </script>
+    </body>
+</html>
