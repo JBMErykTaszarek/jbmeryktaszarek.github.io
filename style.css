@@ -15,9 +15,11 @@ header{
     padding: 40px 100px;
     z-index: 10000;
     transition: 0.6s;
+    
 }
 header .logo{
     position: relative;
+    margin-bottom: 50px;
     font-weight: 700;
     color: #ffffff;
     text-decoration: none;
@@ -83,7 +85,7 @@ header #toogle:after{
     right: 0;
     width: 500px;
     height: 100vh;
-    background: #32362f;
+    background: #070707f1;
     color: #ffffff;
     z-index: 1;
     display: grid;
@@ -111,7 +113,7 @@ header #toogle:after{
     text-transform: uppercase;
 } 
 .content{
-    max-width: 600px;
+    max-width: 1000px;
 }
 .content h2{
     color: #ffffff;
@@ -136,5 +138,36 @@ header #toogle:after{
     text-decoration: none;
     font-size: 1.2em;
     font-weight: 500;
+}
+.content img{
+    display: flex;
+    position: relative;
+    width: 400px;
+    border-radius: 50%;
+    
+}
+@media (max-width: 767px){
+    header{
+        padding: 20px 50px;
+    }
+    .banner{
+        padding: 100px 50px 150px;
+    }
+    .banner h2{
+        font-size: 1.8em;
+    }
+    .banner.content p, .banner.content a{
+        font-size: 1em;
+    }
+    .banner.active{
+        transform: translateX(-250px);
+    }
+    #navigation{
+        width: 250px ;
+    }
+    #navigation ul li a{
+        font-size: 1.5em;
+        margin: 5px 0px;
+    }
 }
 
